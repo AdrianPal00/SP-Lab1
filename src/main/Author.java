@@ -1,3 +1,5 @@
+package main;
+
 public class Author {
 
     private String name;
@@ -16,5 +18,10 @@ public class Author {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void print()
+    {
+        System.out.println("Author's name is: " + this.getName());
     }
 }

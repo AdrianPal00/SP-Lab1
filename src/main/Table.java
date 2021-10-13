@@ -1,4 +1,6 @@
-public class Table {
+package main;
+
+public class Table extends ElementType {
     private String title;
 
     public Table() {
@@ -18,7 +20,7 @@ public class Table {
 
     public void print()
     {
-        System.out.println("Table with name: " + title);
+        System.out.println("main Table with name: " + title);
     }
 
 

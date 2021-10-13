@@ -1,4 +1,6 @@
-public class Image {
+package main;
+
+public class Image extends ElementType {
     private String imageName;
 
     public Image()

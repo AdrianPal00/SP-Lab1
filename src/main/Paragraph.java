@@ -1,4 +1,6 @@
-public class Paragraph {
+package main;
+
+public class Paragraph extends ElementType {
     private String text;
 
     public Paragraph() {
@@ -18,7 +20,7 @@ public class Paragraph {
 
     public void print()
     {
-        System.out.println("This is a Paragraph: " + text);
+        System.out.println("This is a main Paragraph: " + text);
 
     }
 }
