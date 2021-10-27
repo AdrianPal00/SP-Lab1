@@ -1,6 +1,8 @@
-package main;
+package main.Leafs;
 
-public class Paragraph extends ElementType {
+import main.Element;
+
+public class Paragraph implements Element {
     private String text;
 
     public Paragraph() {
@@ -22,5 +24,20 @@ public class Paragraph extends ElementType {
     {
         System.out.println("This is a main Paragraph: " + text);
 
+    }
+
+    @Override
+    public void addElement(Element element) {
+
+    }
+
+    @Override
+    public void remove(Element element) {
+
+    }
+
+    @Override
+    public Element get(int i) {
+        return null;
     }
 }

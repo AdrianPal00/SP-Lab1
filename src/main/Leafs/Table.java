@@ -1,6 +1,8 @@
-package main;
+package main.Leafs;
 
-public class Table extends ElementType {
+import main.Element;
+
+public class Table implements Element {
     private String title;
 
     public Table() {
@@ -23,5 +25,18 @@ public class Table extends ElementType {
         System.out.println("main Table with name: " + title);
     }
 
+    @Override
+    public void addElement(Element element) {
 
+    }
+
+    @Override
+    public void remove(Element element) {
+
+    }
+
+    @Override
+    public Element get(int i) {
+        return null;
+    }
 }

@@ -3,23 +3,18 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book {
+public class Book extends Section{
     private String title;
     private List<Author> authors = new ArrayList<>();
-    private List<Chapter> chapters = new ArrayList<>();
-
-    public Book() {
-    }
 
     public Book(String title) {
         this.title = title;
     }
 
 
-    public Book(String title, List<Author> authors, List<Chapter> chapters) {
+    public Book(String title, List<Author> authors) {
         this.title = title;
         this.authors = authors;
-        this.chapters = chapters;
     }
 
     public String getTitle() {
@@ -38,27 +33,10 @@ public class Book {
         this.authors = authors;
     }
 
-    public List<Chapter> getChapters() {
-        return chapters;
-    }
-
-    public void setChapters(List<Chapter> chapters) {
-        this.chapters = chapters;
-    }
 
     public void addAuthor(Author author)
     {
         this.authors.add(author);
-    }
-    public int createChapter (String chapterName)
-    {
-        Chapter chapter= new Chapter(chapterName);
-        this.chapters.add(chapter);
-        return this.chapters.indexOf(chapter);
-    }
-
-    public Chapter getChapter(int indexChapterOne) {
-        return this.chapters.get(indexChapterOne);
     }
 
     public void print()
@@ -78,8 +56,10 @@ public class Book {
                 if (authors.indexOf(author) == authors.size() - 2)
                     System.out.print("and ");
             }
+        }
             System.out.println();
 
+            super.print();
+
         }
-    }
 }
