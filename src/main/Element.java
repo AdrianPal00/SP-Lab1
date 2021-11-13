@@ -1,13 +1,14 @@
 package main;
 
 public interface Element {
-    public abstract void print();
 
-    public abstract void addElement(Element element);
+    void print();
 
-    public void remove(Element element);
+    void addElement(Element element);
 
-    public Element get(int i);
+    void remove(Element element);
+
+    Element get(int i);
 
 
 

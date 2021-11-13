@@ -5,7 +5,9 @@ import main.Leafs.*;
 public class Main {
     public static void main(String[] args) {
 
-        /*main.Book discoTitanic = new main.Book("Disco Titanic");
+        /*
+        Lab 1
+        main.Book discoTitanic = new main.Book("Disco Titanic");
         discoTitanic.createNewParagraph("main.Paragraph 1");
         discoTitanic.createNewParagraph("main.Paragraph 2");
         discoTitanic.createNewParagraph("main.Paragraph 3");
@@ -16,7 +18,9 @@ public class Main {
         discoTitanic.print();
          */
 
-        /*Book discoTitanic = new Book("Disco Titanic");
+        /*
+        Lab 2
+        Book discoTitanic = new Book("Disco Titanic");
         Author rpGheo = new Author("Radu Pavel Gheo");
         discoTitanic.addAuthor(rpGheo);
         Author rpNiculescu = new Author("Mirel Petre Niculescu");
@@ -38,6 +42,8 @@ public class Main {
         scOneOne.print();
 */
 
+        /*
+        Lab 3
         Book noapteBuna = new Book("Noapte buna, copii!");
         Author rpGheo = new Author("Radu Pavel Gheo");
         noapteBuna.addAuthor(rpGheo);
@@ -56,6 +62,8 @@ public class Main {
         cap111.add(cap1111);
         cap1111.add(new Image("Image subchapter 1.1.1.1"));
         noapteBuna.print();
+
+         */
 
     }
 }

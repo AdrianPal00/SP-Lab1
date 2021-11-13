@@ -3,19 +3,12 @@ package main.Leafs;
 import main.Element;
 
 public class Image implements Element {
-    private String imageName;
+    private final String imageName;
 
-    public Image() {}
     public Image(String imageName) {
-        this.imageName = imageName;
-    }
 
-    public String getImageName() {
-        return imageName;
-    }
-
-    public void setImageName(String imageName) {
         this.imageName = imageName;
+
     }
 
     public void print()
