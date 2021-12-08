@@ -27,7 +27,7 @@ public class Book extends Section{
         this.authors.add(author);
     }
 
-    public void print()
+    public void render()
     {
         System.out.println("The name of the book is: " + this.getTitle());
         if (this.getAuthors().size()==0)
@@ -47,7 +47,7 @@ public class Book extends Section{
         }
             System.out.println();
 
-            super.print();
+            super.render();
 
         }
 }

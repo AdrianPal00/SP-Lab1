@@ -1,7 +1,8 @@
-package main.Leafs;
+package main;
 
 import main.AllignStrategy;
 import main.Element;
+import main.Visitor;
 
 public class Paragraph implements Element, AllignStrategy {
     private String text;
@@ -11,7 +12,7 @@ public class Paragraph implements Element, AllignStrategy {
         this.text = text;
     }
 
-    public void print() {
+    public void render() {
         if(allignStrategy == null)
             System.out.println("This is a main Paragraph: " + text);
         else
@@ -38,6 +39,11 @@ public class Paragraph implements Element, AllignStrategy {
     @Override
     public Element get(int i) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 
     @Override

@@ -1,6 +1,7 @@
-package main.Leafs;
+package main;
 
 import main.Element;
+import main.Visitor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,7 +18,7 @@ public class Image implements Element {
         }
     }
 
-    public void print()
+    public void render()
     {
         System.out.println("This is an Image: " + imageName);
     }
@@ -35,5 +36,10 @@ public class Image implements Element {
     @Override
     public Element get(int i) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+    visitor.visit(this);
     }
 }

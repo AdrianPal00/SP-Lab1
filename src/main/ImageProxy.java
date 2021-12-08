@@ -1,7 +1,5 @@
 package main;
 
-import main.Leafs.Image;
-
 public class ImageProxy implements Element {
 
     private final String imageName;
@@ -20,8 +18,8 @@ public class ImageProxy implements Element {
     }
 
     @Override
-    public void print() {
-            loadImage().print();
+    public void render() {
+            loadImage().render();
     }
 
     @Override
@@ -37,5 +35,10 @@ public class ImageProxy implements Element {
     @Override
     public Element get(int i) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+    visitor.visit(this);
     }
 }

@@ -16,11 +16,11 @@ public class Section implements Element {
     }
 
     @Override
-    public void print() {
+    public void render() {
         System.out.println("My section is: " + this.name);
         for (Element component : components)
         {
-            component.print();
+            component.render();
         }
     }
 
@@ -39,8 +39,22 @@ public class Section implements Element {
         return components.get(i);
     }
 
+
+    @Override
+    public void accept(Visitor visitor) {
+        components.forEach(c -> c.accept(visitor));
+    }
+
     public void add(Element e)
     {
         components.add(e);
+    }
+
+    @Override
+    public String toString() {
+        return "Section{" +
+                "name='" + name + '\'' +
+                ", components=" + components +
+                '}';
     }
 }
