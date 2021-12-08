@@ -11,3 +11,8 @@ remove also the unnecessary getter and setter for attributes.
 https://github.com/AdrianPal00/SP-Lab1/tree/1fec8f07192cfb7203bc31a4d9b9e25a29d3e120
 
 all good
+
+# Feedback lab5:
+https://github.com/AdrianPal00/SP-Lab1/commit/257c6a4f01cfd1942fb71da6cbc69f6b1dce6c6a
+
+all good
