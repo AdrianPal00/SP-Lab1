@@ -16,3 +16,10 @@ all good
 https://github.com/AdrianPal00/SP-Lab1/commit/257c6a4f01cfd1942fb71da6cbc69f6b1dce6c6a
 
 all good
+
+# Feedback lab6:
+https://github.com/AdrianPal00/SP-Lab1/commit/73a25ece9355f302abfe06b72c9f4c9305bc183f
+
+- implement the visitor to generate the table of content.
+
+# Proposed grade: 9
